@@ -1,0 +1,21 @@
+.container {
+  height: 100vh;
+  background-color: var(--black);
+  padding-top: 7rem;
+  margin-top: 5rem;
+}
+.specialText {
+  color: #fff;
+  font-size: 6rem;
+  margin-bottom: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.smallText {
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}

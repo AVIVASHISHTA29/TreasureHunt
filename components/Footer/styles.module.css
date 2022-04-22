@@ -1,0 +1,80 @@
+.container {
+  background-color: var(--black);
+  color: #fff;
+  min-height: 100vh;
+  position: relative;
+}
+
+.topContainer {
+  padding: 3rem;
+  border-bottom: 1px solid #222;
+}
+.smallText {
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.mainHeading {
+  margin-top: 10rem;
+  font-size: 7rem;
+  font-family: "Berlin";
+  text-align: center;
+}
+
+.bottomContainer {
+  position: absolute;
+  bottom: 0;
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #222;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.links p {
+  margin-right: 1rem;
+}
+
+.navLink {
+  position: relative;
+  margin: 0 1rem;
+  cursor: pointer;
+  width: fit-content;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.navLink2 {
+  color: #000;
+  cursor: pointer;
+}
+
+.navLink::after {
+  position: absolute;
+  bottom: -6px;
+  left: 0%;
+  content: "";
+  display: block;
+  height: 1px;
+  width: 0;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.navLink:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.navLink:hover {
+  transition-duration: 0.2s;
+}
