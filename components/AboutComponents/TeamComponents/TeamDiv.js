@@ -14,7 +14,7 @@ function TeamDiv() {
           (cursor.style.display = "block"),
           cursor.classList.remove("show"),
           cursor.classList.add("show"),
-          cursor2.classList.remove("cursor"),
+          cursor2.classList.add("cursor2"),
           (cursor.style.top = e.clientY + "px");
       });
     } else {
@@ -24,7 +24,7 @@ function TeamDiv() {
         (cursor.style.left = e.clientX + "px"),
           (cursor.style.display = "none"),
           cursor.classList.remove("show"),
-          cursor2.classList.add("cursor"),
+          cursor2.classList.remove("cursor2"),
           (cursor.style.top = e.clientY + "px");
       });
     }
@@ -41,6 +41,7 @@ function TeamDiv() {
         setFlag(false);
       }}
     >
+      <div className="cursor2" id="cursor2"></div>
       <div className={styles.leftContainer}>
         <img
           className="myimg"

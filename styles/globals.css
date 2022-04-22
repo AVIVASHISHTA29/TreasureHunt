@@ -41,7 +41,7 @@ a {
   pointer-events: none;
   left: -100px;
   top: 50%;
-  background-color: transparent;
+  background-color: #fe4349;
   z-index: 10000;
   border: 2px solid #fe4349;
   height: 35px;

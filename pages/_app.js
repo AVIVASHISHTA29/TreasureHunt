@@ -14,11 +14,11 @@ function MyApp({ Component, pageProps }) {
         (cursor.style.top = e.clientY + "px");
     });
 
-    cursor2 = document.getElementById("cursor2");
-    document.body.addEventListener("mousemove", function (e) {
-      (cursor2.style.left = e.clientX + "px"),
-        (cursor2.style.top = e.clientY + "px");
-    });
+    // cursor2 = document.getElementById("cursor2");
+    // document.body.addEventListener("mousemove", function (e) {
+    //   (cursor2.style.left = e.clientX + "px"),
+    //     (cursor2.style.top = e.clientY + "px");
+    // });
   }, []);
 
   return (
