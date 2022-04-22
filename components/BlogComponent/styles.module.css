@@ -1,0 +1,64 @@
+.container {
+  min-height: 100vh;
+  margin-top: 4rem;
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.heading {
+  font-size: 7rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.teamContainer {
+  width: 90%;
+  min-height: 300px;
+  border-top: 1px solid #000;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 100;
+}
+
+.headingName {
+  font-size: 5rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  text-align: left;
+  z-index: 100;
+  position: absolute;
+  top: -50px;
+  margin: 0;
+}
+.rightContainer {
+  width: 50%;
+}
+.leftContainer {
+  width: 100vw;
+  height: 0px;
+  position: relative;
+}
+
+.list {
+  position: absolute;
+  font-size: 1rem;
+  top: -50px;
+  left: -25px;
+  font-weight: 400;
+}
+
+.leftContainer p {
+  width: 100%;
+  margin-left: 7rem;
+  transition: all 0.3s ease-out;
+}
+
+.leftContainer:hover > p {
+  transform: translateX(-7rem);
+}
