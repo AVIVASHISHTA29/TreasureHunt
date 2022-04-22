@@ -15,7 +15,7 @@
 
 .teamContainer {
   width: 80%;
-  min-height: 300px;
+  min-height: 400px;
   border-top: 1px solid #000;
   padding-top: 2rem;
   margin-bottom: 2rem;
@@ -24,7 +24,9 @@
   align-items: center;
   margin-left: auto;
   margin-right: auto;
+  z-index: 100;
 }
+
 .headingName {
   font-size: 5rem;
   font-weight: 400;
@@ -44,6 +46,8 @@
   position: relative;
 }
 .rightText {
+  position: relative;
+  z-index: 100;
   text-align: justify;
   display: block;
   margin-right: auto;

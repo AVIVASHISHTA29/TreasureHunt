@@ -8,19 +8,23 @@ function TeamDiv() {
   useEffect(() => {
     if (flag) {
       cursor = document.getElementById("myimg");
+      var cursor2 = document.getElementById("cursor");
       document.body.addEventListener("mousemove", function (e) {
         (cursor.style.left = e.clientX + "px"),
           (cursor.style.display = "block"),
           cursor.classList.remove("show"),
           cursor.classList.add("show"),
+          cursor2.classList.remove("cursor"),
           (cursor.style.top = e.clientY + "px");
       });
     } else {
+      var cursor2 = document.getElementById("cursor");
       cursor = document.getElementById("myimg");
       document.body.addEventListener("mousemove", function (e) {
         (cursor.style.left = e.clientX + "px"),
           (cursor.style.display = "none"),
           cursor.classList.remove("show"),
+          cursor2.classList.add("cursor"),
           (cursor.style.top = e.clientY + "px");
       });
     }
@@ -30,6 +34,9 @@ function TeamDiv() {
     <div
       className={styles.teamContainer}
       style={{ zIndex: 100 }}
+      onMouseEnter={() => {
+        setFlag(true);
+      }}
       onMouseLeave={() => {
         setFlag(false);
       }}
@@ -44,21 +51,9 @@ function TeamDiv() {
           style={{ display: !flag && "none" }}
         />
 
-        <p
-          className={styles.headingName}
-          onMouseEnter={() => {
-            setFlag(true);
-          }}
-        >
-          NAME 1
-        </p>
+        <p className={styles.headingName}>NAME 1</p>
       </div>
-      <div
-        className={styles.rightContainer}
-        onMouseEnter={() => {
-          setFlag(false);
-        }}
-      >
+      <div className={styles.rightContainer}>
         <p className={styles.rightText}>
           When you tell someone that your interests lie in fashion and design
           and luxury, more often than not, they think you are yet another
