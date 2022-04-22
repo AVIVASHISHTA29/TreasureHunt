@@ -36,7 +36,7 @@ function TeamDiv() {
     >
       <div className={styles.leftContainer}>
         <img
-          class="myimg"
+          className="myimg"
           id="myimg"
           src={
             "https://www.giantfreakinrobot.com/wp-content/uploads/2021/05/tony-stark-robert-downey-jr.jpg"
